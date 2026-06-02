@@ -57,7 +57,7 @@ tasks:
         type: io.kestra.plugin.gcp.bigquery.Query
         sql: | 
           CREATE TABLE IF NOT EXISTS `{{kv('GCP_PROJECT_ID')}}.{{kv('GCP_DATASET')}}.greentripdata` (
-              unique_row_id STRING,
+              unique_row_id BYTES,
               filename STRING,
               VendorID INT64,
               lpep_pickup_datetime TIMESTAMP,
