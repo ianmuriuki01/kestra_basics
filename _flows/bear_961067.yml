@@ -1,0 +1,15 @@
+id: bear_961067
+namespace: company.team
+
+tasks:
+  - id: hello
+    type: io.kestra.plugin.core.log.Log
+    message: Hello World! 🚀
+
+  - id: push_to_github
+    type: io.kestra.plugin.git.PushFlows
+    branch: main
+    commitMessage: new commit
+    password: "{{secret('GITHUB_ACCESS_TOKEN')}}"
+    username: ianmuriuki01
+    url: https://github.com/ianmuriuki01/kestra_basics
