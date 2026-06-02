@@ -2,14 +2,6 @@ id: elt_pipeline
 namespace: elt_pipeline
 
 
-inputs:
-  - id: taxi_color
-    type: SELECT
-    displayName: Select a color
-    values: ["green", "yellow"]
-    defaults: "green"
-
-
 tasks:
   - id: hello
     type: io.kestra.plugin.core.log.Log
