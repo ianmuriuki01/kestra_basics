@@ -11,5 +11,5 @@ tasks:
     branch: main
     commitMessage: new commit
     password: "{{secret('GITHUB_ACCESS_TOKEN')}}"
-    username: ianmuriuki01
+    username: "{{secret('USERNAME')}}"
     url: https://github.com/ianmuriuki01/kestra_basics
